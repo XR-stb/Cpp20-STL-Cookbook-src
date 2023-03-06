@@ -1527,6 +1527,8 @@ int main() {
 #include<string_view>
 #include<vector>
 #include<ranges>
+#include<algorithm>
+
 namespace stdr = std::ranges;
 
 bool is_eos(const std::string_view& str) {
