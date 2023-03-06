@@ -1187,7 +1187,7 @@ void test1() {
 
 void test2()try {
 	std::vector v{ 1,2,3,4,5 };
-	auto& i = v.at(5);
+	auto& i = v.at(5);//使用at函数访问指定的元素，同时进行越界检查, 保证了程序的安全
 	print("{}\n", i);
 }
 catch (std::exception& e) {
